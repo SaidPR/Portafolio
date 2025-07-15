@@ -1,13 +1,66 @@
-# React + Vite
+# 🧑‍💻 Portafolio Personal – Said Piñones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio personal, un sitio web donde presento quién soy, mis proyectos y tecnologías que utilizo.  
+Está construido con **React**, **Vite** y utiliza **Tailwind CSS vía CDN** para un desarrollo rápido y flexible.
 
-Currently, two official plugins are available:
+🔗 **Enlace en vivo:**  
+https://portafolio-said.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Portafolio
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS (CDN)](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/) para despliegue
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+my-portfolio/
+├── public/
+│   └── assets/
+│       └── foto.jpg
+├── src/
+│   ├── components/
+│   │   ├── Contact.jsx
+│   │   └── Header.jsx
+│   │   └── Projects.jsx
+│   │   └── Technologies.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 🚀 Instalación local
+
+```bash
+pnpm install
+pnpm run dev
+```
+
+Abre en tu navegador: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📦 Despliegue
+
+Este proyecto se encuentra desplegado en **Vercel**.  
+Cada cambio que se hace en el repositorio se actualiza automáticamente.
+
+---
+
+## 🧠 Autor
+
+**Said Piñones**  
+📧 [ramoszaid5@gmail.com](mailto:ramoszaid5@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/rafaelpinones16/)  
+💻 [GitHub](https://github.com/SaidPR/)
+
