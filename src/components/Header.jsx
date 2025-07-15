@@ -24,7 +24,7 @@ export default function Header() {
             Siempre estoy aprendiendo algo nuevo y participando <br/>en proyectos que me reten.
         </p>
         </div>
-        <a href="/CV-ES Piñones Said 2025.pdf" download>
+        <a href="/assets/CV-ES Piñones Said 2025.pdf" download>
           <div className="flex justify-center mt-4 ml-170 border rounded-xl w-45 h-10 bg-purple-950 
                           transition-transform duration-300 hover:scale-101 border-slate-900">
             <p className="flex justify-center p-1.5 font-bold text-medium">Descarga mi CV</p>
