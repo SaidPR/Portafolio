@@ -12,7 +12,7 @@ export default function Header() {
 
          <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 mt-8">
         <img
-          src="/assets/foto.jpg"
+          src="/assets/foto.webp"
           alt="Foto Said"
           className="object-cover rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 shadow-lg border-2 border-black"
           onContextMenu={(e) => e.preventDefault()}

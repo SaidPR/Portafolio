@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const repoImages = {
-    EstefaniaCrea: "/assets/JynxCode.png",
+    EstefaniaCrea: "/assets/JynxCode.webp",
     ControlAgro25: "/assets/agroLogo.webp",
-    "ControlAgro---Web": "/assets/ControlAgroWeb.png",
-    "Florist-Web": "/assets/FloristWeb.png",
+    "ControlAgro---Web": "/assets/ControlAgroWeb.webp",
+    "Florist-Web": "/assets/FloristWeb.webp",
 };
 
 export default function Projects() {
