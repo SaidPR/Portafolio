@@ -15,6 +15,7 @@ export default function Header() {
           src="/assets/foto.jpg"
           alt="Foto Said"
           className="object-cover rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 shadow-lg border-2 border-black"
+          onContextMenu={(e) => e.preventDefault()}
         />
         <div className="text-center sm:text-left mt-4 sm:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">¡Hola, soy Said Piñones!</h1>
