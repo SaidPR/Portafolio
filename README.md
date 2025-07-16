@@ -61,6 +61,7 @@ Cada cambio que se hace en el repositorio se actualiza automáticamente.
 
 - Dejar de implementar Tailwind mediante CDN
 - Implementación de animaciones 
+- Diseño responsive
  
 ---
 
