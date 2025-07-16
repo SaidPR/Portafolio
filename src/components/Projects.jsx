@@ -26,13 +26,13 @@ export default function Projects() {
         .map(name => repos.find(repo => repo.name === name))
         .filter(Boolean); 
     return (
-        <section id="projects" className="px-4 text-center">
+        <section id="projects" className="px-4 sm:px-8 text-center">
             <div className="flex items-center justify-center my-12">
                 <div className="w-full h-px bg-gray-600"></div>
                 <span className="px-4 text-gray-300 text-sm uppercase tracking-widest">Proyectos</span>
                 <div className="w-full h-px bg-gray-600"></div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
                 {filteredRepos.map(repo => (
                     <div key={repo.id} 
                         className="border border-gray-600 rounded-xl shadow-2xl p-8 flex flex-col items-center w-full max-w-xl transition-transform duration-300 hover:scale-102"

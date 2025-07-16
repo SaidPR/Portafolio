@@ -28,7 +28,9 @@ function App() {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-purple-900 text-white px-4 py-2 rounded-full shadow-lg hover:bg-purple-700 transition-all z-50"
+          className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 bg-purple-900 
+            text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full shadow-lg hover:bg-purple-700 
+            transition-all z-50 text-sm sm:text-base"
           aria-label="Volver al inicio"
         >
           ↑ Inicio

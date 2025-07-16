@@ -19,7 +19,7 @@ export default function Technologies() {
         <span className="px-4 text-gray-300 text-sm uppercase tracking-widest">Tecnologías</span>
         <div className="w-full h-px bg-gray-600"></div>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 mt-6">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6 px-4">
         {techs.map((t) => (
           <img
             key={t.name}
