@@ -57,6 +57,13 @@ Cada cambio que se hace en el repositorio se actualiza automáticamente.
 
 ---
 
+## ⬆️ Mejoras futuras
+
+- Dejar de implementar Tailwind mediante CDN
+- Implementación de animaciones 
+ 
+---
+
 ## 🧠 Autor
 
 **Said Piñones**  
