@@ -11,6 +11,7 @@
     "build:styles": "pnpx @tailwindcss/cli -i ./input.css -o ./src/assets/output.css --watch"
   },
   "dependencies": {
+    "@midudev/tailwind-animations": "^0.2.0",
     "@tailwindcss/cli": "^4.1.11",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -9,24 +9,28 @@ export default function Technologies() {
     { name: 'FastAPI',    badge: 'https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white' },
     { name: 'C++',        badge: 'https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white' },
     { name: 'Java',       badge: 'https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white' },
-    { name: 'Linux',      badge: 'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black' },
-];
+    { name: 'Linux',      badge: 'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black'},
+  ];
 
   return (
     <section id="technologies" className="px-4 text-center">
       <div className="flex items-center justify-center my-12">
-        <div className="w-full h-px bg-gray-600"></div>
-        <span className="px-4 text-gray-300 text-sm uppercase tracking-widest">Tecnologías</span>
-        <div className="w-full h-px bg-gray-600"></div>
+        <div className="separator"></div>
+        <span className="separator-name">Tecnologías</span>
+        <div className="separator"></div>
       </div>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6 px-4">
-        {techs.map((t) => (
+        {techs.map((t, i) => (
           <img
             key={t.name}
             src={t.badge}
             alt={t.name}
             title={t.name}
-            className="h-8 transition-transform duration-300 hover:scale-110"
+            className="h-8 transition-transform duration-300 hover:scale-110 animate-fade-in-down"
+            style={{
+              animationDelay: `${1450 + (i + 1) * 300}ms`,
+              animationFillMode: 'both',
+            }}
           />
         ))}
       </div>

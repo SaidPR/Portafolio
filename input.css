@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
 
 .menu-button{
     @apply hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm;
@@ -10,4 +11,12 @@
 
 .social-img{
     @apply inline-block w-14 h-14 rounded-full bg-white p-2 shadow-lg;
+}
+
+.separator{
+    @apply w-full h-px bg-gray-600 animate-expand-horizontally animate-delay-900;
+}
+
+.separator-name{
+    @apply px-4 text-gray-300 text-sm uppercase tracking-widest animate-fade-in animate-delay-900;
 }

@@ -28,9 +28,9 @@ export default function Projects() {
     return (
         <section id="projects" className="px-4 sm:px-8 text-center">
             <div className="flex items-center justify-center my-12">
-                <div className="w-full h-px bg-gray-600"></div>
-                <span className="px-4 text-gray-300 text-sm uppercase tracking-widest">Proyectos</span>
-                <div className="w-full h-px bg-gray-600"></div>
+                <div className="separator"></div>
+                <span className="separator-name">Proyectos</span>
+                <div className="separator"></div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
                 {filteredRepos.map(repo => (
