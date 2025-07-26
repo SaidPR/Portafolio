@@ -1,7 +1,7 @@
 # 🧑‍💻 Portafolio Personal – Said Piñones
 
 Bienvenido a mi portafolio personal, un sitio web donde presento quién soy, mis proyectos y tecnologías que utilizo.  
-Está construido con **React**, **Vite** y utiliza **Tailwind CSS vía CDN** para un desarrollo rápido y flexible.
+Está construido con **React**, **Vite** y utiliza **Tailwind CSS** para un desarrollo rápido y flexible.
 
 🔗 **Enlace en vivo:**  
 https://portafolio-said.vercel.app/
@@ -12,7 +12,7 @@ https://portafolio-said.vercel.app/
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
-- [Tailwind CSS (CDN)](https://tailwindcss.com/)
+- [Tailwind](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/) para despliegue
 
 ---
@@ -48,7 +48,6 @@ Cada cambio que se hace en el repositorio se actualiza automáticamente.
 
 ## ⬆️ Mejoras futuras
 
-- Dejar de implementar Tailwind mediante CDN
 - Implementación de animaciones 
  
 ---
