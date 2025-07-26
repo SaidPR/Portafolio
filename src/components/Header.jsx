@@ -1,12 +1,14 @@
+import MenuButton from "./MenuButton";
+
 export default function Header() {
     return (
     <header id="about" className="px-4 sm:px-8 md:px-16 lg:px-32">
         <nav className="flex justify-end items-center p-4 sm:p-8">
         <ul className="flex flex-wrap justify-center gap-2 sm:space-x-4 text-sm sm:text-base font-semibold">
-            <li><a href="#about" className="hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm">Sobre mí</a></li>
-            <li><a href="#technologies" className="hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm">Tecnologías</a></li>
-            <li><a href="#projects" className="hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm">Proyectos</a></li>
-            <li><a href="#contact" className="hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm">Contacto</a></li>
+            <MenuButton href="#about">Sobre mí</MenuButton>
+            <MenuButton href="#technologies">Tecnologías</MenuButton>
+            <MenuButton href="#projects">Proyectos</MenuButton>
+            <MenuButton href="#contact">Contacto</MenuButton>
         </ul>
         </nav>
 
