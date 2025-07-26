@@ -39,17 +39,6 @@ my-portfolio/
 
 ---
 
-## 🚀 Instalación local
-
-```bash
-pnpm install
-pnpm run dev
-```
-
-Abre en tu navegador: [http://localhost:5173](http://localhost:5173)
-
----
-
 ## 📦 Despliegue
 
 Este proyecto se encuentra desplegado en **Vercel**.  
@@ -61,7 +50,6 @@ Cada cambio que se hace en el repositorio se actualiza automáticamente.
 
 - Dejar de implementar Tailwind mediante CDN
 - Implementación de animaciones 
-- Diseño responsive
  
 ---
 
