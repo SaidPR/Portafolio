@@ -2,7 +2,8 @@
 @plugin "@midudev/tailwind-animations";
 
 .menu-button{
-    @apply hover:text-gray-300 px-3 py-2 border rounded-full shadow-sm;
+    @apply px-3 py-2 rounded-full shadow-sm
+           bg-cyan-950 font-bold;
 }
 
 .social-icon{

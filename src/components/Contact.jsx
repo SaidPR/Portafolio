@@ -2,9 +2,9 @@ export default function Contact(){
     return(
         <section id="contact" className="px-4 sm:px-8 text-center">
             <div className="flex items-center justify-center my-12">
-                <div className="w-full h-px bg-gray-700"></div>
-                <span className="px-4 text-gray-300 text-base uppercase tracking-widest font-semibold">Contacto</span>
-                <div className="w-full h-px bg-gray-700"></div>
+                <div className="separator"></div>
+                <span className="separator-name">Contacto</span>
+                <div className="separator"></div>
             </div>
             <h1 className="font-extrabold text-3xl text-gray-100 mb-4 drop-shadow-lg">¡Gracias por visitar mi portafolio!</h1>
             <p className="text-lg text-gray-300 mb-6">Si deseas ponerte en contacto conmigo puedes hacerlo por medio de las siguientes plataformas:</p>
