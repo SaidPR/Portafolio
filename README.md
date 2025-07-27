@@ -14,6 +14,7 @@ https://portafolio-said.vercel.app/
 - [Vite](https://vitejs.dev/)
 - [Tailwind](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/) para despliegue
+- [Animaciones](https://github.com/midudev/tailwind-animations) 
 
 ---
 
