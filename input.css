@@ -21,3 +21,8 @@
 .separator-name{
     @apply px-4 text-gray-300 text-sm uppercase tracking-widest animate-fade-in animate-delay-900;
 }
+
+.boton-cv{
+    @apply mt-4 w-44 mx-auto sm:mx-0 border rounded-xl bg-purple-950 
+            transition-transform duration-300 hover:scale-105 border-slate-900 animate-fade-in-left animate-delay-700
+}

@@ -43,16 +43,13 @@ export default function Header() {
             Me gusta crear soluciones útiles, limpias y funcionales <br/>que respondan a necesidades reales.
             Disfruto enfrentar <br/>retos técnicos y siempre busco crecer con cada proyecto.
           </p>
+          <div className="boton-cv">
           <a href="/assets/CV-ES Piñones Said 2025.pdf" download>
-            <div className="mt-4 w-44 mx-auto sm:mx-0 border rounded-xl bg-purple-950 
-                            transition-transform duration-300 hover:scale-105 border-slate-900 animate-fade-in-left animate-delay-700">
-              <p className="p-2 font-bold text-center">Descarga mi CV</p>
-            </div>
+            <p className="p-2 font-bold text-center">Descarga mi CV</p>
           </a>
+          </div>
         </div>
-      </div>
-
-        
+      </div>        
     </header>
   )
 }
