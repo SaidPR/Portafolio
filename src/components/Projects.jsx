@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ProjectBox from "./ProjectBox";
 
 const repoImages = {
     EstefaniaCrea: "/assets/JynxCode.webp",
@@ -10,10 +11,10 @@ const repoImages = {
 export default function Projects() {
     const [repos, setRepos] = useState([]);
     const repoNames = [
-        "EstefaniaCrea",         // 1º
-        "Florist-Web",          // 2º
-        "ControlAgro25",        // 3º
-        "ControlAgro---Web",    // 4º
+        "EstefaniaCrea",
+        "Florist-Web",
+        "ControlAgro25",
+        "ControlAgro---Web",
     ];
 
     useEffect(() => {
@@ -24,7 +25,8 @@ export default function Projects() {
 
     const filteredRepos = repoNames
         .map(name => repos.find(repo => repo.name === name))
-        .filter(Boolean); 
+        .filter(Boolean);
+
     return (
         <section id="projects" className="px-4 sm:px-8 text-center">
             <div className="flex items-center justify-center my-12">
@@ -32,62 +34,37 @@ export default function Projects() {
                 <span className="separator-name">Proyectos</span>
                 <div className="separator"></div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
-                {filteredRepos.map(repo => (
-                    <div key={repo.id} 
-                        className="border border-gray-600 rounded-xl shadow-2xl p-8 flex flex-col items-center w-full max-w-xl transition-transform duration-300 hover:scale-102"
-                        style={{background: "radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%)"}}>
-                        <p className="text-2xl font-bold mt-1 mb-4 ">{repo.name}</p>
-                        <img
-                            src={repoImages[repo.name] || "/assets/default.png"}
-                            alt={repo.name}
-                            className="w-auto h-64 object-cover rounded-lg mb-4"
-                            onContextMenu={(e) => e.preventDefault()}
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-start">
+                <div className="p-4 sm:p-8 rounded-lg shadow-lg w-full sm:w-1/2 h-auto border border-white/10 bg-white/5">
+                    <img 
+                        src="/assets/logoTec.webp" 
+                        alt="Proyectos" 
+                        className="w-28 rounded-lg mb-4 bg-white object-cover mx-auto block"
+                    />
+                    <h2 className="text-white text-xl font-semibold text-center mb-2">Proyectos Académicos y Personales</h2>
+                    <div className="w-24 h-[2px] bg-gray-400/30 mx-auto mb-4 rounded-full"></div>
+
+                    <p className="text-gray-300 text-sm tracking-wide text-justify leading-relaxed">
+                        Durante mi estancia en el 
+                        <strong> Instituto Tecnológico de Estudios Superiores de Zamora</strong>, he participado en diversos proyectos
+                        que reflejan tanto mi desarrollo académico como mi iniciativa personal.
+                    </p>
+
+                    <p className="text-gray-400 text-xs mt-4 text-justify">
+                        Estos proyectos abarcan distintas áreas de programación, incluyendo desarrollo móvil, diseño de interfaces y 
+                        soluciones web funcionales. Cada uno representa una etapa importante de mi aprendizaje y evolución como desarrollador.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 gap-8 w-full sm:w-1/2">
+                    {filteredRepos.map(repo => (
+                        <ProjectBox 
+                            key={repo.id} 
+                            repo={repo} 
+                            imageSrc={repoImages[repo.name]} 
                         />
-                        <p className="text-gray-400 font-medium mb-2">{repo.description}</p>
-                        <div className="flex flex-wrap gap-2 mb-2">
-                            {/* Badges de tecnologías para repositorios principales */}
-                            {repo.name === "EstefaniaCrea" && (
-                                <>
-                                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" className="h-7" onContextMenu={(e) => e.preventDefault()}/>
-                                    <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" className="h-7" onContextMenu={(e) => e.preventDefault()}/>
-                                </>
-                            )}
-                            {repo.name === "ControlAgro25" && (
-                                <>
-                                    <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" className="h-7" onContextMenu={(e) => e.preventDefault()}/>
-                                    <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" className="h-7" onContextMenu={(e) => e.preventDefault()}/>
-                                </>
-                            )}
-                        </div>
-                        <div className="flex gap-4 mb-2">
-                            {/* Badge de página web para repositorios específicos */}
-                            {repo.name === "ControlAgro---Web" && (
-                                <a href="https://control-agro-web.vercel.app/" className="transition-transform duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
-                                    <img src="https://img.shields.io/badge/Sitio%20Web-1976D2?style=for-the-badge&logo=google-chrome&logoColor=white"
-                                        alt="Sitio Web ControlAgro" className="inline-block h-8" />
-                                </a>
-                            )}
-                            {repo.name === "Florist-Web" && (
-                                <a href="https://saidpr.github.io/Florist-Web/" className="transition-transform duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
-                                    <img src="https://img.shields.io/badge/Sitio%20Web-1976D2?style=for-the-badge&logo=google-chrome&logoColor=white"
-                                        alt="Sitio Web EstefaniaCrea" className="inline-block h-8" />
-                                </a>
-                            )}
-                            <a href={repo.html_url} className="transition-transform duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-                                    alt="GitHub" className="inline-block h-8" 
-                                />
-                            </a>
-                        </div>
-                        {repo.name === "ControlAgro---Web" && (
-                            <p className="text-green-400 text-sm">¡Visita el sitio web de ControlAgro para ver el proyecto en acción!</p>
-                        )}
-                        {repo.name === "Florist-Web" && (
-                            <p className="text-blue-400 text-sm">¡Explora el sitio web de EstefaniaCrea y conoce más!</p>
-                        )}
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

@@ -1,14 +1,16 @@
 export default function Technologies() {
   const techs = [
-    { name: 'JavaScript', badge: 'https://skillicons.dev/icons?i=js' },
-    { name: 'React',      badge: 'https://skillicons.dev/icons?i=react' },
     { name: 'HTML5',      badge: 'https://skillicons.dev/icons?i=html' },
     { name: 'CSS3',       badge: 'https://skillicons.dev/icons?i=css' },
+    { name: 'JavaScript', badge: 'https://skillicons.dev/icons?i=js' },
+    { name: 'React',      badge: 'https://skillicons.dev/icons?i=react' },
     { name: 'Node.js',    badge: 'https://skillicons.dev/icons?i=nodejs' },
     { name: 'Python',     badge: 'https://skillicons.dev/icons?i=python' },
     { name: 'FastAPI',    badge: 'https://skillicons.dev/icons?i=fastapi' },
-    { name: 'C++',        badge: 'https://skillicons.dev/icons?i=cpp' },
     { name: 'Java',       badge: 'https://skillicons.dev/icons?i=java' },
+    { name: 'Firebase',   badge: 'https://skillicons.dev/icons?i=firebase' },
+    { name: 'SQL',        badge: 'https://skillicons.dev/icons?i=sqlite' },
+    { name: 'Git',        badge: 'https://skillicons.dev/icons?i=git' },
     { name: 'Linux',      badge: 'https://skillicons.dev/icons?i=linux'},
   ];
 

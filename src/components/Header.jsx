@@ -37,9 +37,9 @@ export default function Header() {
         />
         <div className="text-center sm:text-left mt-4 sm:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold animate-fade-in-left">¡Hola, soy Said Piñones!</h1>
-          <p className="mt-4 text-sm sm:text-base md:text-lg animate-fade-in-left animate-delay-100">
-            Soy estudiante de Ingeniería en Sistemas enfocado en el <br/>desarrollo de software y desarrollo web con experiencia<br/>
-            práctica en proyectos reales. <br/> <br/>
+          <p className="mt-4 text-sm sm:text-base md:text-lg animate-fade-in-left animate-delay-100 text-justify">
+            Soy estudiante de Ingeniería en Sistemas Computacionales <br/> enfocadoen el desarrollo de software y desarrollo web con <br/>
+            experiencia práctica en proyectos reales. <br/> <br/>
             Me gusta crear soluciones útiles, limpias y funcionales <br/>que respondan a necesidades reales.
             Disfruto enfrentar <br/>retos técnicos y siempre busco crecer con cada proyecto.
           </p>
