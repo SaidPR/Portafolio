@@ -1,44 +1,18 @@
-import MenuButton from "./MenuButton";
-
 export default function Header() {
-  const links = [
-    { href: '#about', label: 'Sobre mí' },
-    { href: '#technologies', label: 'Tecnologías' },
-    { href: '#projects', label: 'Proyectos' },
-    { href: '#contact', label: 'Contacto' },
-  ];
 
     return (
-    <header id="about" className="px-4 sm:px-8 md:px-16 lg:px-32">
-        <nav className="flex justify-end items-center p-4 sm:p-8 animate-fade-in-down animate-delay-700 ">
-          <ul className="flex flex-wrap justify-center gap-6 sm:space-x-4 text-sm sm:text-base font-semibold">
-              {links.map((link, i) => (
-                <MenuButton
-                  key={link.href}
-                  href={link.href}
-                  className="animate-fade-in-down transition-transform duration-300 hover:scale-105"
-                  style={{
-                    animationDelay: `${5000 + i * 150}ms`,
-                    animationFillMode: 'both',
-                  }}
-                >
-                  {link.label}
-                </MenuButton>
-              ))}
-          </ul>
-        </nav>
-
-         <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 mt-8">
+    <header id="about" className="px-4 sm:px-8 md:px-16 lg:px-32 mt-30 scroll-mt-30">
+        <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 mt-8">
         <img
           src="/assets/foto.webp"
           alt="Foto Said"
-          className="object-cover rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 shadow-lg border-2 border-black animate-fade-in animate-duration-1000"
+          className="img-header"
           onContextMenu={(e) => e.preventDefault()}
         />
         <div className="text-center sm:text-left mt-4 sm:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold animate-fade-in-left">¡Hola, soy Said Piñones!</h1>
           <p className="mt-4 text-sm sm:text-base md:text-lg animate-fade-in-left animate-delay-100 text-justify">
-            Soy estudiante de Ingeniería en Sistemas Computacionales <br/> enfocadoen el desarrollo de software y desarrollo web con <br/>
+            Soy estudiante de Ingeniería en Sistemas Computacionales <br/> enfocado en el desarrollo de software y desarrollo web con <br/>
             experiencia práctica en proyectos reales. <br/> <br/>
             Me gusta crear soluciones útiles, limpias y funcionales <br/>que respondan a necesidades reales.
             Disfruto enfrentar <br/>retos técnicos y siempre busco crecer con cada proyecto.

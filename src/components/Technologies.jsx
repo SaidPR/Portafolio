@@ -15,7 +15,7 @@ export default function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="px-4 text-center">
+    <section id="technologies" className="px-4 text-center scroll-mt-28">
       <div className="flex items-center justify-center my-12">
         <div className="separator"></div>
         <span className="separator-name">Tecnologías</span>
@@ -30,7 +30,7 @@ export default function Technologies() {
             title={t.name}
             className="h-14 transition-transform duration-300 hover:scale-110 animate-fade-in-down"
             style={{
-              animationDelay: `${1450 + (i + 1) * 300}ms`,
+              animationDelay: `${2500 + (i + 1) * 300}ms`,
               animationFillMode: 'both',
             }}
           />

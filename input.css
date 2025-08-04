@@ -3,7 +3,7 @@
 
 .menu-button{
     @apply px-3 py-2 rounded-full shadow-sm
-           bg-cyan-950 font-bold;
+           bg-gray-800 font-bold;
 }
 
 .social-icon{
@@ -25,4 +25,27 @@
 .boton-cv{
     @apply mt-4 w-44 mx-auto sm:mx-0 border rounded-xl bg-purple-950 
             transition-transform duration-300 hover:scale-105 border-slate-900 animate-fade-in-left animate-delay-700
+}
+
+.div-menu{
+    @apply bg-gray-400 rounded-bl-full sm:rounded-bl-full w-full sm:w-fit 
+            px-4 sm:px-8 py-3 shadow-xl/15 shadow-indigo-500/50 ml-auto
+}
+
+.nav-menu{
+    @apply flex justify-center sm:justify-start items-center animate-fade-in-down animate-delay-700
+}
+
+.img-header{
+    @apply object-cover rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 
+            shadow-lg border-2 border-black animate-sink animate-duration-1000
+}
+
+.div-pbox{
+    @apply bg-white/5 border border-white/10 rounded-2xl shadow-lg p-4 w-full 
+            transition-transform duration-300 hover:scale-105 flex items-center gap-4
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Menu from './components/Menu'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
   };
 
   return (
-    <div className="mx-auto min-h-screen text-white font-sans relative">
+    <div className="mx-auto min-h-screen text-white font-sans relative scroll-smooth">
+      <Menu />
       <Header />
       <Technologies />
       <Projects />

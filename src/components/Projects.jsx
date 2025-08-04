@@ -28,7 +28,7 @@ export default function Projects() {
         .filter(Boolean);
 
     return (
-        <section id="projects" className="px-4 sm:px-8 text-center">
+        <section id="projects" className="px-4 sm:px-8 text-center scroll-mt-28">
             <div className="flex items-center justify-center my-12">
                 <div className="separator"></div>
                 <span className="separator-name">Proyectos</span>
