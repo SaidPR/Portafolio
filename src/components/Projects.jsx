@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import ProjectBox from "./ProjectBox";
+import FotoTec from "../assets/logoTec.webp";
+import JynxImg from "../assets/JynxCode.webp";
+import AgroImg from "../assets/agroLogo.webp";
+import FloristImg from "../assets/FloristWeb.webp";
+import AgroWebImg from "../assets/ControlAgroWeb.webp";
 
 const repoImages = {
-    EstefaniaCrea: "/assets/JynxCode.webp",
-    ControlAgro25: "/assets/agroLogo.webp",
-    "ControlAgro---Web": "/assets/ControlAgroWeb.webp",
-    "Florist-Web": "/assets/FloristWeb.webp",
+    EstefaniaCrea: JynxImg,
+    ControlAgro25: AgroImg,
+    "ControlAgro---Web": AgroWebImg,
+    "Florist-Web": FloristImg,
 };
 
 export default function Projects() {
@@ -38,7 +43,7 @@ export default function Projects() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-start">
                 <div className="p-4 sm:p-8 rounded-lg shadow-lg w-full sm:w-1/2 h-auto border border-white/10 bg-white/5">
                     <img 
-                        src="/assets/logoTec.webp" 
+                        src= {FotoTec} 
                         alt="Proyectos" 
                         className="w-28 rounded-lg mb-4 bg-white object-cover mx-auto block"
                     />

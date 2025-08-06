@@ -1,10 +1,12 @@
+import FotoSaid from '/src/assets/foto.webp';
+
 export default function Header() {
 
     return (
     <header id="about" className="px-4 sm:px-8 md:px-16 lg:px-32 mt-30 scroll-mt-30">
         <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 mt-8">
         <img
-          src="/assets/foto.webp"
+          src= {FotoSaid}
           alt="Foto Said"
           className="img-header"
           onContextMenu={(e) => e.preventDefault()}
