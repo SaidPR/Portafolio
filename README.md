@@ -47,12 +47,6 @@ Cada cambio que se hace en el repositorio se actualiza automáticamente.
 
 ---
 
-## ⬆️ Mejoras futuras
-
-- Implementación de animaciones 
- 
----
-
 ## 🧠 Autor
 
 **Said Piñones**  
