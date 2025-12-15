@@ -16,7 +16,7 @@ export default function Contact(){
                         className="social-img"
                     />
                 </a>
-                <a href="https://www.linkedin.com/in/rafaelpinones16/" target="_blank" className="social-icon">
+                <a href="https://www.linkedin.com/in/saidramos16/" target="_blank" className="social-icon">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                         alt="LinkedIn"

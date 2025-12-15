@@ -4,12 +4,13 @@ export default function Menu() {
   const links = [
     { href: '#about', label: 'Sobre mí' },
     { href: '#technologies', label: 'Tecnologías' },
+    { href: '#experience', label: 'Experiencia' },
     { href: '#projects', label: 'Proyectos' },
     { href: '#contact', label: 'Contacto' },
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-10 animate-fade-in-left animate-delay-500">
+    <div className="relative top-0 mt-5 z-10 animate-fade-in-left animate-delay-500 items-center">
       <div className="div-menu">
         <nav className="nav-menu">
           <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base font-semibold">

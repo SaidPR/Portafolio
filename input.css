@@ -3,7 +3,7 @@
 
 .menu-button{
     @apply px-3 py-2 rounded-full shadow-sm
-           bg-gray-800 font-bold;
+        font-bold text-lg md:tracking-wide hover:underline hover:underline-offset-8;
 }
 
 .social-icon{
@@ -24,12 +24,13 @@
 
 .boton-cv{
     @apply mt-4 w-44 mx-auto sm:mx-0 border rounded-xl bg-purple-950 
-            transition-transform duration-300 hover:scale-105 border-slate-900 animate-fade-in-left animate-delay-700
+            transition-transform duration-300 border-slate-900 animate-fade-in-left animate-delay-700
+            hover:border-1 hover:border-white hover:bg-white hover:text-purple-950 hover:transition-colors
 }
 
 .div-menu{
-    @apply bg-gray-400 rounded-bl-full sm:rounded-bl-full w-full sm:w-fit 
-            px-4 sm:px-8 py-3 shadow-xl/15 shadow-indigo-500/50 ml-auto
+    @apply sm:rounded-bl-full w-full sm:w-fit 
+            px-4 sm:px-8 py-3 m-auto
 }
 
 .nav-menu{
