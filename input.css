@@ -2,8 +2,8 @@
 @plugin "@midudev/tailwind-animations";
 
 .menu-button{
-    @apply px-3 py-2 rounded-full shadow-sm
-        font-bold text-lg md:tracking-wide hover:underline hover:underline-offset-8;
+    @apply inline-block px-2 py-1 font-semibold uppercase tracking-[0.18em] text-sm
+        text-gray-300 transition-colors duration-200 hover:text-white;
 }
 
 .social-icon{
@@ -38,8 +38,8 @@
 }
 
 .img-header{
-    @apply object-cover rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 
-            shadow-lg border-2 border-black animate-sink animate-duration-1000
+    @apply object-cover rounded-full w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 
+            shadow-[0_20px_45px_rgba(0,0,0,0.45)] border-[10px] border-[#0f0f0f];
 }
 
 .div-pbox{
