@@ -29,6 +29,15 @@ export default function Header() {
               <span className="block">{headerCopy.lastName}</span>
             </h1>
             <p className="mt-4 text-lg text-gray-300 sm:text-xl">{headerCopy.role}</p>
+            <a 
+              href='/assets/CV-ES Piñones Said 2025.pdf'
+              className="inline-block rounded-lg border border-white/80 mt-3 px-6 py-2 font-semibold transition hover:bg-white hover:text-amber-950 cursor-pointer"
+              download
+              aria-label='Descargar CV de Said'
+            >
+              Descargar CV
+            </a>
+
           </div>
         </div>
 

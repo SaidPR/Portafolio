@@ -6,22 +6,22 @@ import AgroWebImg from '../../assets/ControlAgroWeb.webp';
 export const projects = [
   {
     id: 'control-agro-web',
-    title: 'ControlAgro',
+    title: 'Control Agro',
     description:
-      'App móvil para gestión agrícola con módulos de inventario, lotes y reportes en tiempo real.',
+      'Aplicación móvil para la gestión agrícola integral: control de asistencia, producción y trabajadores en tiempo real.',
     heroImage: AgroWebImg,
     logo: AgroLogo,
     ctaLabel: 'Ver repositorio',
     ctaHref: 'https://github.com/SaidPR/ControlAgro25',
-    techs: ['React Native', 'Firebase'],
+    techs: ['React Native', 'Firebase', 'Expo'],
   },
   {
     id: 'florist-web',
     title: 'Florist Web',
     description:
-      'Este sitio tiene como objetivo ilustrar de manera clara, estética y funcional los beneficios del software.',
+      'Este sitio tiene como objetivo ilustrar de manera clara, estética y funcional los beneficios de Florist Management.',
     heroImage: FloristImg,
-    logo: FloristImg,
+    logo: JynxImg,
     ctaLabel: 'Ver sitio',
     ctaHref: 'https://saidpr.github.io/Florist-Web/',
     techs: ['HTML', 'CSS', 'JavaScript'],

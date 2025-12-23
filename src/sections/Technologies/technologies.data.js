@@ -7,5 +7,6 @@ export const technologies = [
   { name: 'FastAPI', badge: 'https://skillicons.dev/icons?i=fastapi' },
   { name: 'MongoDB', badge: 'https://skillicons.dev/icons?i=mongo' },
   { name: 'Git', badge: 'https://skillicons.dev/icons?i=git' },
+  { name: 'Figma', badge: 'https://skillicons.dev/icons?i=figma' },
   { name: 'Linux', badge: 'https://skillicons.dev/icons?i=linux' },
 ];

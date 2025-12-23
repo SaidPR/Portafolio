@@ -3,7 +3,7 @@ import { technologies } from './technologies.data';
 export default function Technologies() {
 
   return (
-    <div id="technologies" className="px-4 text-center scroll-mt-28">
+    <div id="stack" className="px-4 text-center scroll-mt-28">
 
       <div className="flex items-center justify-center my-12">
         <div className="separator"></div>
