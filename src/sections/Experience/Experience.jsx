@@ -24,7 +24,7 @@ export default function Experience() {
             >
               {item.date}
             </time>
-            <h3 className="flex items-center justify-center sm:justify-start mb-1 text-lg font-semibold text-amber-200/95 my-2">
+            <h3 className="flex items-center justify-center sm:justify-start mb-1 text-xl font-semibold text-amber-200/95 my-2">
               {item.role}
               {item.highlight && (
                 <span className="ms-2 bg-sky-900/70 border border-sky-500/40 text-sky-100 text-xs font-medium px-1.5 py-0.5 rounded">
@@ -33,6 +33,16 @@ export default function Experience() {
               )}
             </h3>
             <p className="mb-4 text-gray-200">{item.description}</p>
+            {item.achievements?.length > 0 && (
+              <>
+                <p className="mb-2 text-gray-200 font-medium">Logros:</p>
+                <ul className="list-disc list-inside space-y-3 text-gray-200 mb-4">
+                  {item.achievements.map((achievement, index) => (
+                    <li key={index}>{achievement}</li>
+                  ))}
+                </ul>
+              </>
+            )}
             {item.link && (
               <a
                 href={item.link.href}

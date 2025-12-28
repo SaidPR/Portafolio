@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saidramos.vercel.app/sitemap.xml

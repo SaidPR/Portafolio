@@ -1,6 +1,6 @@
 export default function ProjectBox({ project }) {
   return (
-    <article className="group relative overflow-hidden rounded-3xl bg-lime-100 text-black shadow-2xl ring-1 ring-black/5 transition-transform duration-300">
+    <article className="group relative overflow-hidden rounded-3xl bg-gray-50 text-black shadow-2xl ring-1 ring-black/5 transition-transform duration-300">
       <div className="relative h-48">
         <img
           src={project.heroImage || '/assets/default.png'}
