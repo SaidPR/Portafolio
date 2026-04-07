@@ -22,15 +22,29 @@ export default function ProjectBox({ project }) {
       </div>
 
       <div className="p-5 flex flex-col gap-4">
-        {project.ctaHref && (
-          <a
-            href={project.ctaHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-amber-200/95 px-4 py-2 text-sm font-semibold text-amber-950 shadow hover:bg-blue-200 hover:text-indigo-950 hover:font-bold transition-colors"
-          >
-            {project.ctaLabel || 'Ver proyecto'}
-          </a>
+        {(project.ctaHref || project.repoHref) && (
+          <div className="flex flex-wrap gap-3">
+            {project.ctaHref && (
+              <a
+                href={project.ctaHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-amber-200/95 px-4 py-2 text-sm font-semibold text-amber-950 shadow hover:bg-blue-200 hover:text-indigo-950 hover:font-bold transition-colors"
+              >
+                {project.ctaLabel || 'Ver proyecto'}
+              </a>
+            )}
+            {project.repoHref && (
+              <a
+                href={project.repoHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-amber-300 bg-white/80 px-4 py-2 text-sm font-semibold text-amber-900 shadow hover:bg-amber-100 hover:text-amber-950 transition-colors"
+              >
+                {project.repoLabel || 'Ver repositorio'}
+              </a>
+            )}
+          </div>
         )}
 
         <div className="text-left">
