@@ -6,9 +6,11 @@ export default function Technologies() {
     <div id="stack" className="px-4 text-center scroll-mt-28">
 
       <div className="flex items-center justify-center my-12">
-        <div className="separator"></div>
-        <span className="separator-name">STACK</span>
-        <div className="separator"></div>
+        <div className="flex items-center justify-center gap-3 text-sm uppercase tracking-[0.2em] text-amber-200/80">
+          <span className="h-px w-10 bg-amber-200/60" />
+          <span>Stack</span>
+          <span className="h-px w-10 bg-amber-200/60" />
+        </div>
       </div>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6 px-4">
         {technologies.map((t, i) => (

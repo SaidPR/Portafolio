@@ -31,7 +31,7 @@ export default function Header() {
             <p className="mt-4 text-lg text-gray-300 sm:text-xl">{headerCopy.role}</p>
             <a 
               href='/assets/CV-ES Piñones Said 2025.pdf'
-              className="inline-block rounded-lg border border-white/80 mt-3 px-6 py-2 font-semibold transition hover:bg-white hover:text-amber-950 cursor-pointer"
+              className="inline-block rounded-lg border border-white/50 mt-3 px-3 py-1 font-light transition hover:bg-white hover:text-amber-950 cursor-pointer"
               download
               aria-label='Descargar CV de Said'
             >

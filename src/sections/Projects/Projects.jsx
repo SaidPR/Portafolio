@@ -3,11 +3,13 @@ import { projects} from './projects.data.js';
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-4 sm:px-8 lg:px-16 py-12 text-center scroll-mt-08">
+    <section id="projects" className="px-4 sm:px-8 lg:px-16 py-12 text-center scroll-mt-08 -mt-20">
       <div className="flex items-center justify-center my-12">
-        <div className="separator"></div>
-        <span className="separator-name">Proyectos</span>
-        <div className="separator"></div>
+        <div className="flex items-center justify-center gap-3 text-sm uppercase tracking-[0.2em] text-amber-200/80">
+          <span className="h-px w-10 bg-amber-200/60" />
+          <span>Proyectos</span>
+          <span className="h-px w-10 bg-amber-200/60" />
+        </div>
       </div>
 
       <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/10 via-white/5 to-white/10 border border-white/10 rounded-3xl shadow-2xl backdrop-blur-lg overflow-hidden">
