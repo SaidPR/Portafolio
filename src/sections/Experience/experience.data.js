@@ -3,7 +3,7 @@ export const experienceIntro = 'Me caracterizo por el aprendizaje continuo, la a
 export const experienceItems = [
   {
     id: 'fullstack-2025',
-    date: 'Agosto, 2025',
+    date: 'Agosto, 2025 - Enero 2026',
     datetime: '2025-08',
     role: 'Desarrollador Web FullStack',
     highlight: 'Último',
@@ -21,7 +21,7 @@ export const experienceItems = [
   },
   {
     id: 'software-2024',
-    date: 'Septiembre, 2024',
+    date: 'Septiembre, 2024 - Enero, 2025',
     role: 'Desarrollador de Software',
     description: 'Sistema de gestión para una floristería local, permite gestionar clientes, pedidos, inventario y empleados.',
     achievements: [
